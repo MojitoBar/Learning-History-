@@ -19,5 +19,6 @@ Scanner scan = new Scanner(System.in);    //init Scanner
 - close 메소드를 사용하게 되면 System.in 스트림도 함께 닫힌다.
 - 웬만하면 close 메소드로 Scanner를 닫는 것이 이상적이다.
 
+---
 [참고자료(mine-it-record)](https://mine-it-record.tistory.com/103)<br/>
 [참고자료(okky)](https://okky.kr/article/401102)
