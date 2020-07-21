@@ -40,6 +40,6 @@ class Solution {
 }
 ```
 
-[참고자료 kakao Tech](https://tech.kakao.com/2017/09/27/kakao-blind-recruitment-round-1/)
-[참고자료 프로그래머스](https://programmers.co.kr/)
+[참고자료 kakao Tech](https://tech.kakao.com/2017/09/27/kakao-blind-recruitment-round-1/)<br/>
+[참고자료 프로그래머스](https://programmers.co.kr/)<br/>
 [참고자료 micropai](https://micropai.tistory.com/48)
