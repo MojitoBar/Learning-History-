@@ -7,6 +7,7 @@
 
 ## 카카오 코딩테스트
 - [비밀지도 (난이도: 하)](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/secret_map.md)
+- [다트게임 (난이도: 하)](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/dart_game.md)
 
 ## JAVA 사전
 - [Scanner 클래스](https://github.com/MojitoBar/Learning_History/blob/master/java/Scanner.md)
