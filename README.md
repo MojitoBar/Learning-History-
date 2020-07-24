@@ -5,6 +5,7 @@
 - [14681번 사분면 고르기](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/14681.md)
 - [10818번 최소, 최대](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/10818.md)
 - [1712번 손익분기점](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/1712.md)
+- [2446번 별 찍기 - 9](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/2446.md)
 
 ## 카카오 코딩테스트
 - [비밀지도 (난이도: 하)](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/secret_map.md)
