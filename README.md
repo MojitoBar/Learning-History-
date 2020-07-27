@@ -8,7 +8,7 @@
 - [2446번 별 찍기 - 9](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/2446.md)
 - [5543번 상근날드](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/5543.md)
 - [3052번 나머지](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/3052.md)
-- [2869번 나머지](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/2869.md)
+- [2869번 달팽이는 올라가고 싶다](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/2869.md)
 
 ## 카카오 코딩테스트
 - [비밀지도 (난이도: 하)](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/secret_map.md)
