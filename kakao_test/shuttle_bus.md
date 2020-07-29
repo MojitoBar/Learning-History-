@@ -83,7 +83,6 @@ class Solution {
     }
 }
 ```
----
 * 2020-07-29 1차 실패... 일부 예제에서만 안되는데 잘 모르겠다.
 ---
 [참고자료 kakao Tech](https://tech.kakao.com/2017/09/27/kakao-blind-recruitment-round-1/)<br/>
