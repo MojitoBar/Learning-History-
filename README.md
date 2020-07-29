@@ -15,6 +15,7 @@
 - [비밀지도 (난이도: 하)](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/secret_map.md)
 - [다트게임 (난이도: 하)](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/dart_game.md)
 - [캐시 (난이도: 하)](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/cache.md)
+- [셔틀버스 (난이도: 중)](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/shuttle_bus.md)
 
 ## JAVA 사전
 - [Scanner 클래스](https://github.com/MojitoBar/Learning_History/blob/master/java/Scanner.md)
