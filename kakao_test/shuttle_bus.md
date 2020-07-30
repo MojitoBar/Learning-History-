@@ -2,83 +2,67 @@
 * **카카오에서는 무료 셔틀버스를 운행하기 때문에 판교역에서 편하게 사무실로 올 수 있다. 카카오의 직원은 서로를 '크루'라고 부르는데, 아침마다 많은 크루들이 이 셔틀을 이용하여 출근한다.<br/><br/>이 문제에서는 편의를 위해 셔틀은 다음과 같은 규칙으로 운행한다고 가정하자.<br/><br/>셔틀은 09:00부터 총 n회 t분 간격으로 역에 도착하며, 하나의 셔틀에는 최대 m명의 승객이 탈 수 있다.<br/><br/>셔틀은 도착했을 때 도착한 순간에 대기열에 선 크루까지 포함해서 대기 순서대로 태우고 바로 출발한다. 예를 들어 09:00에 도착한 셔틀은 자리가 있다면 09:00에 줄을 선 크루도 탈 수 있다.<br/><br/>일찍 나와서 셔틀을 기다리는 것이 귀찮았던 콘은, 일주일간의 집요한 관찰 끝에 어떤 크루가 몇 시에 셔틀 대기열에 도착하는지 알아냈다. 콘이 셔틀을 타고 사무실로 갈 수 있는 도착 시각 중 제일 늦은 시각을 구하여라.<br/><br/>단, 콘은 게으르기 때문에 같은 시각에 도착한 크루 중 대기열에서 제일 뒤에 선다. 또한, 모든 크루는 잠을 자야 하므로 23:59에 집에 돌아간다. 따라서 어떤 크루도 다음날 셔틀을 타는 일은 없다.<br/>**
 
 ##### 문제 해결 순서
-
+1. `PriorityQueue`를 통해 크루가 도착하는 시간을 오름차순으로 정렬하여 저장하는 `crew`를 선언
+2. `timetable`의 시간을 분 형식으로 바꾸고 `crew`에 저장
+3. n이 0으로 갈 때까지 반복문을 돌며 크게 2가지 경우로 구분. 마지막 배차버스일 때, 아닐 때
+4. 현재 배차시간보다 일찍왔고 기다리는 크루가 있고 자리가 있다면 수용인원을 -1, `time`에 `crew.poll()` 값을 넣음
+5. 
 ```java
-import java.util.Arrays;
+import java.util.*;
 class Solution {
     public String solution(int n, int t, int m, String[] timetable) {
         String answer = "";
+        //크루가 도착하는 시간을 오름차순으로 정렬
+        PriorityQueue<Integer> crew = new PriorityQueue<>();
         
-        int start = 540;
-        int[] interval = new int[n];
-        int[] last = new int[m];
-        int[] convert_time = new int[timetable.length];
-        int convert_answer = 0;
-        
-        // 타임테이블을 분으로 바꾸기
-        for(int i = 0; i < convert_time.length; i++){
-            int hour = Integer.parseInt(timetable[i].substring(0, 2));
-            int minute = Integer.parseInt(timetable[i].substring(3, 5));
-            convert_time[i] = hour * 60 + minute;
+        for(String table : timetable){
+            //크루의 도착시간을 문자열->Integer 형태로 변환
+            int time = Integer.parseInt(table.substring(0, 2)) * 60 + Integer.parseInt(table.substring(3));
+            crew.add(time);
         }
-        // 타임테이블 정렬
-        Arrays.sort(convert_time);
-        
-        // 버스시간을 저장
-        for(int i = 0; i < n; i++){
-            interval[i] = start + (i*t);         
-        }
-        
-        // 막차타는 사람들 last에 저장
-        int j = 0;
-        for(int i = 0; i < convert_time.length; i++){
-          // 배차가 하나라면
-          if(n <= 1 && j < m){
-            // 배차시간보다 빨리 온 타임테이블을 last에 저장
-            if(interval[0] > convert_time[i]){
-              last[j] = convert_time[i];
-              j++;
+        int busTime = 9 * 60;
+        int last = 0;
+        while(n-->0){
+            //수용인원을 초기화
+            int accept = m; 
+            //마지막으로 탄 크루의 시간
+            int time = 0;
+            //기다리는 크루가 있다면
+            while(!crew.isEmpty()){
+                //현재 버스의 도착시간보다 일찍왔으며, 자리가 있을 때
+                if(crew.peek() <= busTime && accept > 0){
+                    accept--;
+                    time = crew.poll();
+                }
+                else{
+                    break;
+                }
             }
-          }
-            // 배차가 여러개라면
-          else if (n > 1 && j < m){
-            // 막차 전 배차시간보다 같거나 큰 타임테이블을 last에 저장
-            if(interval[n - 2] <= convert_time[i]){
-              last[j] = convert_time[i];
-              j++;
+            //마지막 버스가 아니면
+            if(n > 0){
+                //기다리는 크루가 없다면
+                if(crew.isEmpty()){
+                    //막차시간
+                    last = busTime + ((n + 1) * t);
+                    break;
+                }
+                //기다리는 크루가 있으면 버스 다음시간
+                busTime += t;
             }
-          }
+            //마지막 버스이면
+            else{
+                //자리가 있으면 버스 시간으로
+                if(accept > 0){
+                    last = busTime;
+                }
+                //자리가 없으면 마지막으로 탄 크루보다 1분 일찍
+                else{
+                    last = time - 1;
+                }
+                break;
+            }
         }
-        
-        // 막차에 자리가 있을 때
-        if(j < m){
-          convert_answer = interval[n - 1];
-        }
-        // 막차에 자리가 없을 때
-        if(j == m){
-          convert_answer = last[j - 1] - 1;
-        }
-        // 기다리는 사람이 없으면
-        if(j == 0){
-          convert_answer = interval[n - 1];
-        }
-        
-        // 분을 다시 시간 00:00 형식으로 바꾸기
-        String hour = Integer.toString(convert_answer / 60);
-        String minute = Integer.toString(convert_answer % 60);
-        
-        if(hour.length() < 2){
-            answer += "0" + hour + ":";
-        }
-        else{
-            answer += hour + ":";
-        }
-        if(minute.length() < 2){
-          answer += "0" + minute;
-        }
-        else{
-          answer += minute;
-        }
+        answer = String.format("%02d", last / 60) + ":" + String.format("%02d", last % 60);
         return answer;
     }
 }
