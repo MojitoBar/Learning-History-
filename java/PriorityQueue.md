@@ -3,7 +3,7 @@
 - 우선순위 큐(PriorityQueue)는 들어간 순서에 상관없이 일정한 규칙에 따라 우선순위를 정하고, 우선순위가 가장 높은 데이터가 가장 먼저 나오게 된다.
 - 기본적으로 숫자는 낮은 것이 우선순위고, `Comparator`클래스나 `Comparable` 인터페이스를 이용하면 오름차순으로 사용할 수 있다.
 ### 사용법
-* 내림차순 (기본 값)
+- 내림차순 (기본 값)
 ```java
 PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();
 
@@ -15,7 +15,7 @@ priorityQueue.add(1);
 Integer poll = priorityQueue.poll;
 System.out.println(poll); //출력결과 1
 ```
-* 오름차순 (`Collections.reverseOrder()`을 통해 오름차순으로 변경)
+- 오름차순 (`Collections.reverseOrder()`을 통해 오름차순으로 변경)
 ```java
 //우선순위를 높은 숫자위주로 변경
 PriorityQueue<Integer> priorityQueue = new PriorityQueue<>(Collections.reverseOrder());
