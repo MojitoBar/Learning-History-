@@ -40,5 +40,5 @@ System.out.println(poll); //출력결과 4
 
 ---
 [참고자료(JAVA API DOCUMENT)](https://docs.oracle.com/javase/7/docs/api/)<br/>
-[참고자료(siyoon210)](https://siyoon210.tistory.com/117)
+[참고자료(siyoon210)](https://siyoon210.tistory.com/117)<br/>
 [참고자료(stackoverflow)](https://stackoverflow.com/questions/15591431/difference-between-offer-and-add-in-priority-queue-in-java)
