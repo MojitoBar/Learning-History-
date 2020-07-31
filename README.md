@@ -19,3 +19,4 @@
 
 ## JAVA 사전
 - [Scanner 클래스](https://github.com/MojitoBar/Learning_History/blob/master/java/Scanner.md)
+- [PriorityQueue 클래스](https://github.com/MojitoBar/Learning_History/blob/master/java/PriorityQueue.md)
