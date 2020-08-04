@@ -19,6 +19,7 @@
 - [다트게임 (난이도: 하)](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/dart_game.md)
 - [캐시 (난이도: 하)](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/cache.md)
 - [셔틀버스 (난이도: 중)](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/shuttle_bus.md)
+- [뉴스 클러스터링 (난이도: 중)](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/news_clustering.md)
 
 ## JAVA 사전
 - [Scanner 클래스](https://github.com/MojitoBar/Learning_History/blob/master/java/Scanner.md)
