@@ -32,13 +32,13 @@ class Solution {
         // 입력받은 문자열 2개를 전부 대문자로 바꿈
         str1 = str1.toUpperCase();
         str2 = str2.toUpperCase();
-        // `substring(i - 2, i)`로 2글자씩 잘라 반복문을 돌며 영문자 패턴이 `true`면 `ArrayList`에 추가.
+        // substring(i - 2, i)로 2글자씩 잘라 반복문을 돌며 영문자 패턴이 true면 ArrayList에 추가.
         for(int i = 2; i <= str1.length(); i++){
           if(Pattern.matches(p, str1.substring(i - 2, i))){
             arr1.add(str1.substring(i - 2, i));
           }
         }
-        // `substring(i - 2, i)`로 2글자씩 잘라 반복문을 돌며 영문자 패턴이 `true`면 `ArrayList`에 추가.
+        // substring(i - 2, i)로 2글자씩 잘라 반복문을 돌며 영문자 패턴이 true면 ArrayList에 추가.
         for(int i = 2; i <= str2.length(); i++){
           if(Pattern.matches(p, str2.substring(i - 2, i))){
             arr2.add(str2.substring(i - 2, i));
@@ -46,7 +46,7 @@ class Solution {
         }
         // 합집합에 두 배열의 길이를 더함
         intersection = arr1.size() + arr2.size();
-        // 반복문을 돌며 `arr2`배열에 `arr1`원소가 있는지 확인, 있으면 `arr2`배열에서 삭제하고 교집합 +1
+        // 반복문을 돌며 arr2배열에 arr1원소가 있는지 확인, 있으면 arr2배열에서 삭제하고 교집합 +1
         for(int i = 0; i < arr1.size(); i++){
             if(arr2.contains(arr1.get(i))){
                 arr2.remove(arr1.get(i));
