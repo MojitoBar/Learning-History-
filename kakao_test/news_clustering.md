@@ -72,7 +72,6 @@ class Solution {
     }
 }
 ```
----
 * 난이도 (중) 문제였지만 왠지 (하) 풀때만큼 쉽게 풀림. 자카드 유사도에 대해 이번에 처음 들어봄.
 ---
 [참고자료 kakao Tech](https://tech.kakao.com/2017/09/27/kakao-blind-recruitment-round-1/)<br/>
