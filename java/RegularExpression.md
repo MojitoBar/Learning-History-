@@ -10,7 +10,7 @@
 
 ##### 정규 표현식 예제
 - `java.util.regex`의 Pattern과 Matcher 클래스를 사용하여 정규 표현식을 다룰 수 있다.
-* 가장 간단한 예제
+**가장 간단한 예제**
 ```java
 // 아무 문자 다음에 at문자가 오는지
 final String regex = ".at$";
@@ -20,7 +20,7 @@ System.out.println(str.matches(regex));
 ```
 - `String.matches()`를 이용해 인자로 정규식을 받아 패턴이 일치하는지를 리턴한다.
 
-* regex 라이브러리를 이용한 예제
+**regex 라이브러리를 이용한 예제**
 ```java
 // regex 관련 라이브러리 추가
 import java.util.regex.Pattern;
