@@ -8,7 +8,7 @@
 - POSIX 정규표현식에서 확장된 Perl방식의 정규표현식
 - Java에서는 Perl의 방식과 유사한 방식을 선택하고 있으나, Perl 방식과 완전히 똑같은 것은 아니고, 그 차이점은 [oralcle문서](https://docs.oracle.com/javase/tutorial/essential/regex/index.html)에 수록되어 있다.
 
-##### 정규 표현식 예제
+### 정규 표현식 예제
 - `java.util.regex`의 Pattern과 Matcher 클래스를 사용하여 정규 표현식을 다룰 수 있다.
 
 **가장 간단한 예제**
