@@ -14,6 +14,7 @@
 - [1978번 소수찾기](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/1978.md)
 - [17070번 파이프 옮기기1](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/17070.md)
 - [1929번 소수 구하기](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/1929.md)
+- [10996번 별 찍기 - 21](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/10996.md)
 
 ## 카카오 코딩테스트
 - [비밀지도 (난이도: 하)](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/secret_map.md)
