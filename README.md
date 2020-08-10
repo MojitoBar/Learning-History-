@@ -16,6 +16,7 @@
 - [1929번 소수 구하기](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/1929.md)
 - [10996번 별 찍기 - 21](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/10996.md)
 - [1436번 영화감독 숌](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/1436.md)
+- [1085번 직사각형에서 탈출](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/1085.md)
 
 ## 카카오 코딩테스트
 - [비밀지도 (난이도: 하)](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/secret_map.md)
