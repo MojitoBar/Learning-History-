@@ -24,6 +24,7 @@ try{
 - read() : 한 글자만 읽어 정수형으로 반환. ('1'을 입력한다고 해서 정수 '1'이 아닌 문자 '1'의 ASCII코드 '49'를 반환)
 - readLine() : 한 줄을 읽어 String으로 반환
 
+# BufferedWriter 클래스
 ### 개요
 - BufferedWriter는 버퍼를 이용해서 출력하는 클래스이다.
 - 일반적으로 사용하는 `System.out.print()` 보다 효율이 좋다.
