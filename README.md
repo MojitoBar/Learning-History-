@@ -1,5 +1,18 @@
 # Learning_History
 잘못된 정보가 있으면 Issues에 남겨주세요.
+
+## 카카오 코딩테스트
+- [비밀지도 (난이도: 하)](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/secret_map.md)
+- [다트게임 (난이도: 하)](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/dart_game.md)
+- [캐시 (난이도: 하)](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/cache.md)
+- [셔틀버스 (난이도: 중)](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/shuttle_bus.md)
+- [뉴스 클러스터링 (난이도: 중)](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/news_clustering.md)
+
+## JAVA 사전
+- [Scanner 클래스](https://github.com/MojitoBar/Learning_History/blob/master/java/Scanner.md)
+- [PriorityQueue 클래스](https://github.com/MojitoBar/Learning_History/blob/master/java/PriorityQueue.md)
+- [BufferedReader / BufferedWriter 클래스](https://github.com/MojitoBar/Learning_History/blob/master/java/BufR_BufW.md)
+
 ## 백준 알고리즘
 - [2884번 알람시계](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/2884.md)
 - [14681번 사분면 고르기](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/14681.md)
@@ -17,15 +30,4 @@
 - [10996번 별 찍기 - 21](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/10996.md)
 - [1436번 영화감독 숌](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/1436.md)
 - [1085번 직사각형에서 탈출](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/1085.md)
-
-## 카카오 코딩테스트
-- [비밀지도 (난이도: 하)](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/secret_map.md)
-- [다트게임 (난이도: 하)](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/dart_game.md)
-- [캐시 (난이도: 하)](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/cache.md)
-- [셔틀버스 (난이도: 중)](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/shuttle_bus.md)
-- [뉴스 클러스터링 (난이도: 중)](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/news_clustering.md)
-
-## JAVA 사전
-- [Scanner 클래스](https://github.com/MojitoBar/Learning_History/blob/master/java/Scanner.md)
-- [PriorityQueue 클래스](https://github.com/MojitoBar/Learning_History/blob/master/java/PriorityQueue.md)
-- [BufferedReader / BufferedWriter 클래스](https://github.com/MojitoBar/Learning_History/blob/master/java/BufR_BufW.md)
+- [3009번 네 번째 점](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/3009.md)
