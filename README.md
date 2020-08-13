@@ -31,3 +31,4 @@
 - [1436번 영화감독 숌](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/1436.md)
 - [1085번 직사각형에서 탈출](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/1085.md)
 - [3009번 네 번째 점](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/3009.md)
+- [4153번 직각삼각형](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/4153.md)
