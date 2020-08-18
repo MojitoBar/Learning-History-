@@ -13,6 +13,9 @@
 - [PriorityQueue 클래스](https://github.com/MojitoBar/Learning_History/blob/master/java/PriorityQueue.md)
 - [BufferedReader / BufferedWriter 클래스](https://github.com/MojitoBar/Learning_History/blob/master/java/BufR_BufW.md)
 
+## Flutter를 위한 Dart 기본 지식
+- [새로 알게된 정보만 다루는 특별편](https://github.com/MojitoBar/Learning_History/blob/master/dart/dart.md)
+
 ## 백준 알고리즘
 - [2884번 알람시계](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/2884.md)
 - [14681번 사분면 고르기](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/14681.md)
