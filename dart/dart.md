@@ -61,7 +61,7 @@ main(){
   newCar.printVars();
 }
 ```
-#### 클래스 생성자에 []를 쓴 버전
+- 클래스 생성자에 []를 쓴 버전
 ```dart
 class Car{
   int seats;
@@ -81,7 +81,7 @@ main(){
   newCar.printVars();
 }
 ```
-#### 클래스 생성자에 {}를 쓴 버전
+- 클래스 생성자에 {}를 쓴 버전
 ```dart
 class Car{
   int seats;
