@@ -42,7 +42,7 @@ int timesFour(Function f, int x) => x = f(x) + f(x);
 ```
 
 ### 클래스
-```
+```dart
 // 기본적인 클래스 선언.
 class Car{
   int seats;
