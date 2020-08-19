@@ -60,8 +60,9 @@ main(){
   Car newCar = Car(4, 'red');
   newCar.printVars();
 }
-
-// 클래스 생성자에 []를 쓴 버전
+```
+#### 클래스 생성자에 []를 쓴 버전
+```dart
 class Car{
   int seats;
   String color;
@@ -79,8 +80,9 @@ main(){
   // color 부분에서 null을 출력함.
   newCar.printVars();
 }
-
-// 클래스 생성자에 {}를 쓴 버전
+```
+#### 클래스 생성자에 {}를 쓴 버전
+```dart
 class Car{
   int seats;
   String color;
