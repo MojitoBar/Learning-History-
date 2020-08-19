@@ -86,7 +86,7 @@ main(){
 class Car{
   int seats;
   String color;
-  // 대괄호 안의 파라미터 값은 옵션값이 되어 꼭 넣지 않아도 되는 값이 된다.
+  // 중괄호 안의 파라미터 값은 이름에 따라 값을 지정해줄 수 있다. (파라미터 순서에 상관없이 초기화 가능.)
   Car({int sts, String clr}){
     this.seats = sts;
     this.color = clr;
