@@ -37,3 +37,4 @@
 - [4153번 직각삼각형](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/4153.md)
 - [1259번 팰린드롬수](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/1259.md)
 - [5597번 과제 안 내신 분..?](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/5597.md)
+- [10250번 ACM 호텔](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/10250.md)
