@@ -38,3 +38,4 @@
 - [1259번 팰린드롬수](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/1259.md)
 - [5597번 과제 안 내신 분..?](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/5597.md)
 - [10250번 ACM 호텔](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/10250.md)
+- [2775번 부녀회장이 될테야](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/2775.md)
