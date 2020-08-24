@@ -152,7 +152,22 @@ main() async {
 - 비동기 함수를 사용하는 함수에서는 반드시 async, await 키워드를 사용해야한다.
 - 비동기 함수 실행 도중 에러는 `try-catch`문으로 잡으면 된다.
 - async, await을 대신해 `future.then`을 사용할 수도 있지만 나는 async, await가 보기 편하다. 나중에 꼭 `future.then`을 사용해야되는 경우가 생기면 그때 다시 보면 될듯.
+
+### Dart에서의 Public, Private, Protected 키워드
+- Dart에는 Public, Private, Protected 키워드가 없다.
+- 기본적으로 Public이 적용되며, `_` 키워드를 이용해 Private을 적용할 수 있다.
+```dart
+class Car{
+  // 다른 파일에서 사용가능
+  String model = 'Samsung';
+  // 다른 파일에서 사용 불가능
+  String _enginNo = 'klzsivjrelijz123';
+}
+```
+- `_`키워드를 사용한 변수는 `get`키워드를 통해 읽기 전용으로 값을 불러올 수 있다.
+- Public이 적용된 변수는 기본적으로 getter, setter가 적용된다.
 ---
 [참고자료(Dart)](https://dart.dev/#try-dart)<br/>
 [참고자료(The Coding Papa)](https://www.youtube.com/watch?v=nRsxWt3BWzM&list=PLwUg6hFuXV867frrnqlTeYkuItvgnlilO)<br/>
-[참고자료(Beom Dev Log)](https://beomseok95.tistory.com/309#future%EB%9E%80_)
+[참고자료(Beom Dev Log)](https://beomseok95.tistory.com/309#future%EB%9E%80_)<br/>
+[참고자료(개발하는 두더지)](https://duzi077.tistory.com/294)
