@@ -166,8 +166,46 @@ class Car{
 ```
 - `_`키워드를 사용한 변수는 `get`키워드를 통해 읽기 전용으로 값을 불러올 수 있다.
 - Public이 적용된 변수는 기본적으로 getter, setter가 적용된다.
+
+### Dart에서의 get, set 키워드
+- `_`키워드를 이용해 선언한 변수를 사용하기 위해서 get, set을 이용한다.
+```dart
+class Person{
+  String _name;
+  String get name => _name;
+  set name(String name) => _name = name;
+}
+
+main(){
+  Person person = Person();
+  person.name = 'Kim';
+  print(person.name);
+}
+```
+- `Person` 클래스의 `_name`을 `Private`으로 선언했다. 그 아래 `get`과 `set`을 이용해 `name`이라는 새로운 변수에 wrapping해서 사용한다.
+- `main` 함수에서 `person.name`을 통해 쉽게 값을 수정하고 불러올 수 있다.
+- 근데 이럼 `Private`의 역할이 의미가 있을까? 아래 예제를 보자.
+
+```dart
+class Person{
+  String _name;
+  String get name => (_name == null) ? 'Lee' : _name;
+  set name(String name) => (name == null) ? _name = 'Park' : _name = name;
+}
+
+main(){
+  Person person = Person();
+  print(person.name);
+  person.name = null;
+  print(person.name);
+}
+```
+- 위 예제에서 `get`, `set`에 삼항연산자를 통해 `_name`에 `null`이 되는 경우가 없도록 한다.
+- 변수의 값이 절대 `null`이 되지 않아야 하거나 특정 default 값을 가져야할 경우 제어가 가능하다.
+
 ---
 [참고자료(Dart)](https://dart.dev/#try-dart)<br/>
 [참고자료(The Coding Papa)](https://www.youtube.com/watch?v=nRsxWt3BWzM&list=PLwUg6hFuXV867frrnqlTeYkuItvgnlilO)<br/>
 [참고자료(Beom Dev Log)](https://beomseok95.tistory.com/309#future%EB%9E%80_)<br/>
-[참고자료(개발하는 두더지)](https://duzi077.tistory.com/294)
+[참고자료(개발하는 두더지)](https://duzi077.tistory.com/294)<br/>
+[참고자료(mystoryg)](https://brunch.co.kr/@mystoryg/127)
