@@ -203,6 +203,18 @@ main(){
 - 위 예제에서 `get`, `set`에 삼항연산자를 통해 `_name`에 `null`이 되는 경우가 없도록 한다.
 - 변수의 값이 절대 `null`이 되지 않아야 하거나 특정 default 값을 가져야할 경우 제어가 가능하다.
 
+### dart에서의 타입 캐스팅
+- `as` 키워드를 이용해 매우 편하게 형변환을 한다.
+```dart
+var a = 10;       // int형으로 초기화
+var b = 3.5;      // double형으로 초기화
+
+b = a;            // 오류 발생
+b = a as double   // as 자료형으로 쉽게 바꾸기 가능
+```
+- 어떤 자료형이든 `as`로 형변환이 가능하다.
+- 주관적이지만 다른 언어에 비해 통일성과 가독성이 뛰어나서 이 부분은 진짜 좋은듯.
+
 ---
 [참고자료(Dart)](https://dart.dev/#try-dart)<br/>
 [참고자료(The Coding Papa)](https://www.youtube.com/watch?v=nRsxWt3BWzM&list=PLwUg6hFuXV867frrnqlTeYkuItvgnlilO)<br/>
