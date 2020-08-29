@@ -11,7 +11,6 @@ fun main() {
     println(add(4, 5))
 }
 
-//1. 함수
 fun helloWorld(){
     println("Hello World!")
 }
@@ -25,7 +24,7 @@ fun add(a : Int, b : Int) : Int{
 - 마찬가지로 함수 리턴값 역시 `fun FunctionName() : Int{}`형식으로 함수 뒤에 리턴값 자료형이 온다.
 
 ### val vs var
-```
+```kotlin
 fun hi(){
 	  val a : Int = 10
     var b : Int = 9
