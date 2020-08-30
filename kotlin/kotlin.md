@@ -59,7 +59,42 @@ fun main() {
 - `${}`중괄호 안에 있는 것을 변수로 취급한다.
 - `$`를 문자 그대로 사용하고 싶으면 역슬래쉬와 함께쓰면 된다.
 
+### 조건문 if-else, when
+```kotlin
+fun maxBy(a:Int, b:Int):Int{
+    if(a > b){
+        return a
+    }else{
+        return b
+    }
+}
 
+fun maxBy2(a:Int, b:Int) = if(a>b) a else b
+
+fun checkNum(score:Int){
+    when(score){
+        0 -> println("this is 0")
+        1 -> println("this is 1")
+        2, 3 -> println("this is 2 or 3")
+        in 10..80 -> println("not bad")
+        in 90..100 -> println("you are genius")
+        else -> println("I don't know")
+    }
+    
+    var b = when(score){
+        1 -> 1
+        2 -> 2
+        else -> 3
+    }
+}
+```
+- if문의 사용은 다른 언어와 크게 다르지 않다.
+- 간략하게 줄이는 방법이 조금 다른데, `maxBy2()`함수를 보면 함수의 리턴값을 자동으로 추론하기 때문에 따로 선언해주지 않아도 된다.
+- when문은 다른 언어의 switch문과 비슷하다.
+- `when(변수){}`형태로 사용하며, 중괄호 안에서는 화살표를 통해 특정 값일 때 행동을 선언해줄 수 있다.
+- when문을 사용할때 무조건 else를 써줘야 한다.
+- `in` 키워드를 통해 범위를 지정할 수도 있다.
+- 화살표로 행동을 지정해주는 것을 return값으로 사용해줄수도 있다.
 ---
 [참고자료(Code with Joyce)](https://www.youtube.com/watch?v=IDVnZPjRCYg)<br/>
 [참고자료(Kotlin)](https://play.kotlinlang.org/)
