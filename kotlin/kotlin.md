@@ -44,6 +44,22 @@ fun hi(){
 - val은 value의 약자로 값을 한번 지정해주면 바꿀 수 없다.
 - var은 variable의 약자로 값이 언제든지 변할 수 있다.
 - 만약 변수를 선언하고 바로 값을 지정해주지 않는다면 뒤에 `: Int`등 자료형을 꼭 써줘야한다.
+
+### String Template
+```kotlin
+fun main() {
+    val name = "Mojito"
+    val lastName = "bar"
+    
+    println("my name is ${name + lastName} I'm 23")
+    println("this is 2\$a")
+}
+```
+- 변수를 문자열과 같이 출력하려면 `$`뒤에 변수 명을 사용한다.
+- `${}`중괄호 안에 있는 것을 변수로 취급한다.
+- `$`를 문자 그대로 사용하고 싶으면 역슬래쉬와 함께쓰면 된다.
+
+
 ---
 [참고자료(Code with Joyce)](https://www.youtube.com/watch?v=IDVnZPjRCYg)<br/>
 [참고자료(Kotlin)](https://play.kotlinlang.org/)
