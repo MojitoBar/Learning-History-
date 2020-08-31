@@ -95,6 +95,30 @@ fun checkNum(score:Int){
 - when문을 사용할때 무조건 else를 써줘야 한다.
 - `in` 키워드를 통해 범위를 지정할 수도 있다.
 - 화살표로 행동을 지정해주는 것을 return값으로 사용해줄수도 있다.
+
+### array, list
+```kotlin
+fun array(){
+    val array = arrayOf(1,2,3)
+    val list = listOf(1,2,3)
+    
+    val array2 = arrayOf(1,"d",2.3f)
+    val list2 = listOf(1,"d",11L)
+    
+    array[0] = 3
+    var result = list.get(0)
+    
+    val arrayList = arrayListOf<Int>()
+    arrayList.add(10)
+    arrayList.add(20)
+}
+```
+- array는 기본적으로 mutable이고 list는 기본적으로 immutable이다.
+- array는 arrayOf로, list는 listOf로 초기화 한다.
+- array는 읽기, 쓰기 둘다 가능하지만 list는 읽기 전용이기 때문에 `list.get()`으로 통해 값을 가져올 수만 있다.
+- list의 원소는 주소값을 참조하는 것이기 때문에 `val`로 선언해도 된다.
+- 하지만 list를 새로 초기화하거나 list 자체를 덮어 씌울 경우 `var`로 선언해야 한다.
+- mutable list도 있다고 한다.
 ---
 [참고자료(Code with Joyce)](https://www.youtube.com/watch?v=IDVnZPjRCYg)<br/>
 [참고자료(Kotlin)](https://play.kotlinlang.org/)
