@@ -96,7 +96,7 @@ fun checkNum(score:Int){
 - `in` 키워드를 통해 범위를 지정할 수도 있다.
 - 화살표로 행동을 지정해주는 것을 return값으로 사용해줄수도 있다.
 
-### array, list
+### Array, List
 ```kotlin
 fun array(){
     val array = arrayOf(1,2,3)
@@ -119,6 +119,36 @@ fun array(){
 - list의 원소는 주소값을 참조하는 것이기 때문에 `val`로 선언해도 된다.
 - 하지만 list를 새로 초기화하거나 list 자체를 덮어 씌울 경우 `var`로 선언해야 한다.
 - mutable list도 있다고 한다.
+
+### For, While 반복문
+```kotlin
+fun forAndWhile(){
+    val students = arrayListOf("mojito", "watermelon", "strawberry", "peach")
+    for(name in students){
+        println(name)
+    }
+    
+    var sum : Int = 0
+    for(i in 1..100){
+        sum += i
+    }
+    println(sum)
+    
+    for((index, name) in students.withIndex()){
+        println("${index+1}번째 학생 : ${name}")
+    }
+    
+    var index = 0
+    while(index < 10){
+        println("current index : ${index}")
+        index++
+    }
+}
+```
+- for문과 while문의 작동 방식은 다른 언어와 비슷하다.
+- for문에서는 `in`키워드로 범위를 지정해준다.
+- for문에서 index를 함께 지정해줄 수 있는데 `in`뒤에 `withIndex()`를 추가해줘야한다.
+- `1..100`같은 방식 외에도 `downTo`, `step`, `until`같은 키워드도 있다.
 ---
 [참고자료(Code with Joyce)](https://www.youtube.com/watch?v=IDVnZPjRCYg)<br/>
 [참고자료(Kotlin)](https://play.kotlinlang.org/)
