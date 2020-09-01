@@ -149,6 +149,41 @@ fun forAndWhile(){
 - for문에서는 `in`키워드로 범위를 지정해준다.
 - for문에서 index를 함께 지정해줄 수 있는데 `in`뒤에 `withIndex()`를 추가해줘야한다.
 - `1..100`같은 방식 외에도 `downTo`, `step`, `until`같은 키워드도 있다.
+
+### Nullable, NonNull
+```kotlin
+fun nullcheck(){
+    //NPE :NULL pointer Exception
+    var name : String = "mojito"
+    var nullName : String? = null
+    var nameInUpperCase = name.toUpperCase()
+    var nullNameInUpperCase = nullName?.toUpperCase()
+    
+    //?:
+    val lastName : String? = "Ju"
+    val fullName = name + " " + (lastName?: "NO lastName")
+    
+    println(fullName)
+}
+
+fun ignoreNulls(str : String?){
+    //!!
+    val mNotNull : String = str!!
+    val upper = mNotNull.toUpperCase()
+    
+    val email : String? = "mojito@naver.com"
+    email?.let{
+    	println("my email is ${email}")   
+    }
+}
+```
+- 코틀린에는 변수가 null이 될 수 있는지, null이 될 수 없는지 지정해줄 수 있다.
+- `var variable : String?` 자료형 뒤에 ?를 붙히는 것으로 해당 변수가 null일수도 있다는 것을 암시한다.
+- 해당 변수가 nullable이면 `toUpperCase()`와 같은 함수를 사용하기 위해 `nullName?.toUpperCase()`처럼 변수뒤에 ?를 붙혀줘야한다.
+- `?:`키워드는 엘비스 연산자라 불린다. 90도로 돌리면 ?가 엘비스 머리 같단다..
+- `?:`키워드는 해당 변수가 nullable일때 기본값을 지정해 줄 수 있다.
+- `!!`키워드는 해당 변수가 nullable이지만 null이 아니라고 보장해주는 키워드이다.
+- null이 아니라고 보장되면 `toUpperCase()`와 같은 함수를 사용하기위해 변수뒤에 ?를 붙혀주지 않아도 된다.
 ---
 [참고자료(Code with Joyce)](https://www.youtube.com/watch?v=IDVnZPjRCYg)<br/>
 [참고자료(Kotlin)](https://play.kotlinlang.org/)
