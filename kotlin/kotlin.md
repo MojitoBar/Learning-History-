@@ -184,6 +184,52 @@ fun ignoreNulls(str : String?){
 - `?:`키워드는 해당 변수가 nullable일때 기본값을 지정해 줄 수 있다.
 - `!!`키워드는 해당 변수가 nullable이지만 null이 아니라고 보장해주는 키워드이다.
 - null이 아니라고 보장되면 `toUpperCase()`와 같은 함수를 사용하기위해 변수뒤에 ?를 붙혀주지 않아도 된다.
+
+### Class
+```kotlin
+fun main() {
+    val human = Human("Mojito", 14)
+    human.eatingCake()
+    
+    val mom = Human("watermelon", 30)
+    
+    val korean = Korean()
+    korean.singASong()
+}
+
+open class Human(val name : String = "Anonymous"){
+    init{
+        val name : String = "Anonymous"
+        println("New human has been born!!")
+    }
+    
+    constructor(name : String, age : Int) : this(name){
+        println("my name is ${name}, ${age}years old")
+    }
+    
+    fun eatingCake(){
+        println("This is so YUMMYYYY~~~")
+    }
+    
+    open fun singASong(){
+        println("lalala")
+    }
+}
+
+class Korean : Human(){
+    override fun singASong(){
+		super.singASong()
+        println("라라랄")
+        println("my name is ${name}")
+    }
+}
+```
+- 기본적으로 kotlin에서 class는 `class Human(){}`방식으로 선언한다.
+- Human 클래스처럼 class 선언시 소괄호 안에기본 생성자를 선언해줄 수 있다.
+- init 키워드는 클래스의 생성자 역할을 한다.
+- constructor 키워드 역시 생성자의 역할을 하지만 init은 기본 생성자이고, constructor는 부가적인 역할이다.
+- class 상속은 Korean 클래스가 Human 클래스를 상속받는 것처럼 선언하면 된다.
+- 기본적으로 kotlin에서 function과 class는 final이기 때문에 override 혹은 상속을 위해서는 `open`키워드를 사용해야한다.
 ---
 [참고자료(Code with Joyce)](https://www.youtube.com/watch?v=IDVnZPjRCYg)<br/>
 [참고자료(Kotlin)](https://play.kotlinlang.org/)
