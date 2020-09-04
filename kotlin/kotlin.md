@@ -231,5 +231,23 @@ class Korean : Human(){
 - class 상속은 Korean 클래스가 Human 클래스를 상속받는 것처럼 선언하면 된다.
 - 기본적으로 kotlin에서 function과 class는 final이기 때문에 override 혹은 상속을 위해서는 `open`키워드를 사용해야한다.
 ---
+
+### Lamda
+```kotlin
+val square = {number : Int -> number*number}
+
+val nameAge = {name : String, age : Int -> "my name is ${name} I'm ${age}"}
+
+fun main(){
+    println(square(12))
+    println(nameAge("mojito", 23))
+}
+```
+- 람다식은 우리가 마치 value 처럼 다룰 수 있는 익명함수이다.
+- 람다는 기본적으로 `val lamdaName : Type = {argumentList -> codeBody}` 형식으로 선언한다.
+- 함수와의 다른 점은 뭘까? 바로 변수처럼 사용할 수 있다는 점이다.
+- 람다식은 메소드의 파라미터로 넘겨줄수 있다.
+- 람다식은 return 값으로 사용할 수 있다.
+
 [참고자료(Code with Joyce)](https://www.youtube.com/watch?v=IDVnZPjRCYg)<br/>
 [참고자료(Kotlin)](https://play.kotlinlang.org/)
