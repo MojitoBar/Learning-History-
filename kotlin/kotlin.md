@@ -249,5 +249,30 @@ fun main(){
 - 람다식은 메소드의 파라미터로 넘겨줄수 있다.
 - 람다식은 return 값으로 사용할 수 있다.
 
+### 확장함수
+```kotlin
+fun main() {
+    val a = "mojito said"
+    val b = "soapStone said"
+    println(a.pizzaIsGreat())
+    println(b.pizzaIsGreat())
+    
+    println(extendString("mojito", 23))
+}
+
+val pizzaIsGreat : String.() -> String = {
+    this + "Pizza is the best!"
+}
+
+fun extendString(name : String, age : Int) : String{
+    val introduceMyself : String.(Int) -> String = {"I am ${this} and ${it} years old"}
+	return name.introduceMyself(age)
+}
+```
+- 확장함수는 이미 있는 class에 원하는 함수를 추가해서 사용하는 것을 말한다.
+- 위 예제는 String클래스에 `pizzaIsGreat()`, `extendString()`함수를 추가한 예제이다.
+- 확장함수는 `val funName : 클래스.() -> 리턴값 = {}` 형식으로 선언한다.
+- 실 예제에서 사용해봐야지 어디서 유용하게 쓰이는지 알 수 있을 것 같다.
+
 [참고자료(Code with Joyce)](https://www.youtube.com/watch?v=IDVnZPjRCYg)<br/>
 [참고자료(Kotlin)](https://play.kotlinlang.org/)
