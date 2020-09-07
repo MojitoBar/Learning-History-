@@ -274,5 +274,37 @@ fun extendString(name : String, age : Int) : String{
 - 확장함수는 `val funName : 클래스.() -> 리턴값 = {}` 형식으로 선언한다.
 - 실 예제에서 사용해봐야지 어디서 유용하게 쓰이는지 알 수 있을 것 같다.
 
+### Lamda를 표현하는 여러가지 방법
+```kotlin
+fun main() {
+    println(calculateGrade(97))
+    println(calculateGrade(971))
+    
+    val lamda = {number : Double ->
+    	number == 4.3213
+    }
+    
+    println(invokeLamda(lamda))
+    println(invokeLamda({it > 3.22}))
+    println(invokeLamda{it > 3.22})
+}
+
+val calculateGrade : (Int) -> String = {
+    when(it){
+	in 0..40 -> "fail"
+        in 41..70 -> "pass"
+        in 71..100 -> "perfect"
+        else -> "Error"
+    }
+}
+
+fun invokeLamda(lamda : (Double) -> Boolean) : Boolean{
+    return lamda(5.2343)
+}
+```
+- `invokeLamda()` 함수는 Double형을 파라미터로 받고 Boolean형을 리턴받는 lamda함수를 파라미터로 받고 Boolean형을 리턴형으로 받는다.
+- `invokeLamda({it > 3.22})` 와 `invokeLamda{it > 3.22}`는 같다.
+- 사실 lamda는 예제만 봐서는 잘 모르겠다. 어디서 사용할지는 어플을 만들면서 직접 겪어봐야 알 것 같다.
+
 [참고자료(Code with Joyce)](https://www.youtube.com/watch?v=IDVnZPjRCYg)<br/>
 [참고자료(Kotlin)](https://play.kotlinlang.org/)
