@@ -306,5 +306,24 @@ fun invokeLamda(lamda : (Double) -> Boolean) : Boolean{
 - `invokeLamda({it > 3.22})` 와 `invokeLamda{it > 3.22}`는 같다.
 - 사실 lamda는 예제만 봐서는 잘 모르겠다. 어디서 사용할지는 어플을 만들면서 직접 겪어봐야 알 것 같다.
 
+### data class
+```kotlin
+data class Ticket(val companyName : String, val name : String, var date : String, var seatNumber : Int)
+// toString(), hashCode(), equals(), copy()
+
+class TicketNormal(val companyName : String, val name : String, var date : String, var seatNumber : Int)
+
+fun main(){
+    val ticketA = Ticket("kreanAir", "mojito", "2020-09-08", 15)
+    val ticketB = TicketNormal("kreanAir", "mojito", "2020-09-08", 15)
+    
+    println(ticketA)
+    println(ticketB)
+}
+```
+- data class는 data를 보관하기위한 목적으로 만든 클래스를 말한다.
+- 그냥 클래스로 쓴 것과는 결과물이 다르다. TicketA는 `Ticket(companyName=kreanAir, name=mojito, date=2020-09-08, seatNumber=15)`임에 반해 TicketB 는 `TicketNormal@5a07e868`처럼 주소값이 뜬다.
+- data class를 사용하면 `toString()`, `hashCode()`, `equals()`, `copy()` 같은 메소드도 자동으로 사용할 수 있다.
+
 [참고자료(Code with Joyce)](https://www.youtube.com/watch?v=IDVnZPjRCYg)<br/>
 [참고자료(Kotlin)](https://play.kotlinlang.org/)
