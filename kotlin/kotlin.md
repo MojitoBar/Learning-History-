@@ -325,5 +325,30 @@ fun main(){
 - 그냥 클래스로 쓴 것과는 결과물이 다르다. TicketA는 `Ticket(companyName=kreanAir, name=mojito, date=2020-09-08, seatNumber=15)`임에 반해 TicketB 는 `TicketNormal@5a07e868`처럼 주소값이 뜬다.
 - data class를 사용하면 `toString()`, `hashCode()`, `equals()`, `copy()` 같은 메소드도 자동으로 사용할 수 있다.
 
+### companion object
+```kotlin
+fun main() {
+    val book = Book.create()
+    val bookId = Book.BookFactory.getId()
+    println("${bookId} ${book.name}")
+}
+
+class Book private constructor(val id : Int, val name : String){
+    companion object BookFactory : IdProvider{
+        override fun getId() : Int{
+            return 555;
+        }
+        val myBook = "new Book"
+        fun create() = Book(getId(), myBook)
+    }
+}
+
+interface IdProvider{
+    fun getId() : Int
+}
+```
+- 자바에서는 static을 이용해 외부에서 정적 변수에 접근했다.
+- kotlin에서는 static이 없고 companion object를 제공한다.
+
 [참고자료(Code with Joyce)](https://www.youtube.com/watch?v=IDVnZPjRCYg)<br/>
 [참고자료(Kotlin)](https://play.kotlinlang.org/)
