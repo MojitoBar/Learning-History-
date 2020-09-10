@@ -2,6 +2,7 @@
 ### 개요
 - Android 개발을 위한 Kotlin 공부.
 - Flutter는 서브, Kotlin을 주력으로 가져갈 예정.
+- 이론보다는 실전 예제가 더 빨리 실력이 느는것 같다.
 - 계속해서 추가 예정.
 
 ### 함수
@@ -349,6 +350,33 @@ interface IdProvider{
 ```
 - 자바에서는 static을 이용해 외부에서 정적 변수에 접근했다.
 - kotlin에서는 static이 없고 companion object를 제공한다.
+
+### object
+```kotlin
+fun main() {
+    val car = CarFactory.makeCar(10)
+    val car2 = CarFactory.makeCar(200)
+    
+    println(car)
+    println(car2)
+    println(CarFactory.cars.size.toString())
+}
+
+//Singleton Pattern
+object CarFactory{
+    val cars : MutableList<Car> = mutableListOf<Car>()
+    fun makeCar(horsePower : Int) : Car{
+        val car = Car(horsePower)
+        cars.add(car)
+        return car
+    }
+}
+
+data class Car(val horsePower : Int)
+```
+- `object`는 `class`와 달리 코드 실행 시 딱 한번 생성된다 (Singleton Pattern).
+- 계속해서 객체를 생성해야하는 경우 object가 유용할 것 같다.
+- `main()`함수에서 `CarFactory`를 여러번 생성하지 않아도 사용할 수 있다.
 
 [참고자료(Code with Joyce)](https://www.youtube.com/watch?v=IDVnZPjRCYg)<br/>
 [참고자료(Kotlin)](https://play.kotlinlang.org/)
