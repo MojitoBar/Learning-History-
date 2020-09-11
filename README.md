@@ -47,3 +47,4 @@
 - [11399번 ATM](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/11399.md)
 - [11047번 동전 0](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/11047.md)
 - [7568번 덩치](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/7568.md)
+- [11650번 좌표 정렬하기](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/11650.md)
