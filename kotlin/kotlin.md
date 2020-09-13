@@ -378,5 +378,22 @@ data class Car(val horsePower : Int)
 - 계속해서 객체를 생성해야하는 경우 object가 유용할 것 같다.
 - `main()`함수에서 `CarFactory`를 여러번 생성하지 않아도 사용할 수 있다.
 
+### map
+```kotlin
+fun main() {
+    //map - key, value pair
+    var map1 = mapOf(Pair("name", "soapstone"))
+    var map2 = mutableMapOf<String, String>()
+    map2.put("1", "123")
+    map2.put("age", "23")
+    
+    for(i in map2){
+        println(i)
+    }
+}
+```
+- map은 key와 value를 쌍으로 값을 갖는 컬렉션이다.
+- List와 동일하게 `mapOf`로 읽기 전용, `mutableMapOf`로 수정 가능한 Map을 선언할 수 있다.
+
 [참고자료(Code with Joyce)](https://www.youtube.com/watch?v=IDVnZPjRCYg)<br/>
 [참고자료(Kotlin)](https://play.kotlinlang.org/)
