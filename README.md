@@ -50,4 +50,5 @@
 - [11650번 좌표 정렬하기](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/11650.md)
 - [5086번 배수와 약수](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/5086.md)
 - [3036번 링](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/3036.md)
+- [2609번 최대공약수와 최소공배수](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/2609.md)
 
