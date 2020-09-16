@@ -1,5 +1,5 @@
 # Learning_History
-잘못된 정보가 있으면 Issues에 남겨주세요.
+잘못된 정보가 있으면 Issues에 남겨주세요.깃
 
 ## 카카오 코딩테스트
 - [비밀지도](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/secret_map.md)
@@ -52,3 +52,4 @@
 - [3036번 링](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/3036.md)
 - [2609번 최대공약수와 최소공배수](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/2609.md)
 
+- [2609번 최대공약수와 최소공배수](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/2609.md)
