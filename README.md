@@ -53,3 +53,4 @@
 - [2609번 최대공약수와 최소공배수](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/2609.md)
 - [11653번 소인수분해](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/11653.md)
 - [1037번 약수](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/1037.md)
+- [2751번 수 정렬하기 2](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/2751.md)
