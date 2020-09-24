@@ -55,3 +55,4 @@
 - [1037번 약수](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/1037.md)
 - [2751번 수 정렬하기 2](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/2751.md)
 - [2309번 일곱 난쟁이](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/2309.md)
+- [2231번 분해합](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/2231.md)
