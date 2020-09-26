@@ -57,3 +57,4 @@
 - [2309번 일곱 난쟁이](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/2309.md)
 - [2231번 분해합](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/2231.md)
 - [10870번 피보나치 수 5](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/10870.md)
+- [1463번 1로 만들기](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/1463.md)
