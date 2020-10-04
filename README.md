@@ -60,3 +60,4 @@
 - [1463번 1로 만들기](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/1463.md)
 - [19944번 뉴비의 기준은 뭘까?](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/19944.md)
 - [2455번 지능형 기차](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/2455.md)
+- [11651번 좌표 정렬하기 2](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/11651.md)
