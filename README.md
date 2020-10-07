@@ -61,3 +61,4 @@
 - [19944번 뉴비의 기준은 뭘까?](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/19944.md)
 - [2455번 지능형 기차](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/2455.md)
 - [11651번 좌표 정렬하기 2](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/11651.md)
+- [11050번 이항 계수 1](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/11050.md)
