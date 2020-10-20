@@ -63,3 +63,4 @@
 - [11651번 좌표 정렬하기 2](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/11651.md)
 - [11050번 이항 계수 1](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/11050.md)
 - [10773번 제로](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/10773.md)
+- [1920번 수 찾기](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/1920.md)
