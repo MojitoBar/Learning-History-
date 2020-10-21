@@ -20,6 +20,9 @@
 ### Android를 위한 Kotlin 기본 지식
 - [기본 문법과 간단한 앱 예제를 다룸](https://github.com/MojitoBar/Learning_History/blob/master/kotlin/kotlin.md)
 
+### Django를 위한 Python 기본 지식
+- [새로 알게된 정보만 다루는 특별편](https://github.com/MojitoBar/Learning_History/blob/master/python/python.md)
+
 ## 백준 알고리즘
 - [2884번 알람시계](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/2884.md)
 - [14681번 사분면 고르기](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/14681.md)
