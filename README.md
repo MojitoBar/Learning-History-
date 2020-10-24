@@ -21,8 +21,8 @@
 - [기본 문법과 간단한 앱 예제를 다룸](https://github.com/MojitoBar/Learning_History/blob/master/kotlin/kotlin.md)
 
 ## WEB 사전
-### Django를 위한 Python 기본 지식
-- [새로 알게된 정보만 다루는 특별편](https://github.com/MojitoBar/Learning_History/blob/master/python/python.md)
+### 구글 IDE로 개발하는 Django 예제
+- [Todo-List](https://github.com/MojitoBar/Learning_History/blob/master/python/python.md)
 
 ## 백준 알고리즘
 - [2884번 알람시계](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/2884.md)
