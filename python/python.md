@@ -39,5 +39,9 @@ TIME_ZONE = 'Asia/Seoul'
 |description|TextField|image|ImageField|file|FileField|
 |date_created|DateField()|
 |date_deadline|DateField()|
+- 위 표와 같이 3개의 테이블을 만들건데, 마치 데이터베이스 설계하는 것과 비슷하다 느꼈다. (실제로 DB설계임.)
+- 장고에서는 기본적으로 SQlite 데이터베이스를 제공한다. 따라서 SQlite 설계 작업이라 보면 될듯 싶다.
+- 하나의 `TodoList`는 여러개의 이미지와 파일을 가질 수 있다.
+- `TodoList_images`와 `TodoList_files`는 하나의 `TodoList`에 `ForeignKey`로 연결된다.
 ---
 [참고자료(장고쟁이)](https://djangojeng-e.github.io/2020/05/19/TodoList-4%ED%8E%B8-%EB%AA%A8%EB%8D%B8-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/)
