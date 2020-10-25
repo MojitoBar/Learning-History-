@@ -32,5 +32,12 @@ TIME_ZONE = 'Asia/Seoul'
 ## 모델 계획하기
 - 이제 Todo-list의 모델을 설계해보자.
 
+|TodoList||TodoList_images||TodoList_files||
+|---|---|---|---|---|---|
+|필드명|데이터 타입|필드명|데이터 타입|필드명|데이터 타입|
+|name|CharField|todo|ForeignKey|todo|ForeignKey|
+|description|TextField|image|ImageField|file|FileField|
+|date_created|DateField()|
+|date_deadline|DateField()|
 ---
 [참고자료(장고쟁이)](https://djangojeng-e.github.io/2020/05/19/TodoList-4%ED%8E%B8-%EB%AA%A8%EB%8D%B8-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/)
