@@ -16,14 +16,15 @@
 - 하나의 프로젝트에 여러개의 앱이 생성되기는 하나, 굳이 그래야하는 이유를 아직 모르겠다.
 
 ## settings.py 수정하기
-`INSTALLED_APPS = [
+```python
+INSTALLED_APPS = [
   ...,
   'APP_NAME',
 ]
 
 LANGUAGE_CODE = ko-kr'
 TIME_ZONE = 'Asia/Seoul'
-`
+```
 - `PROJECT_NAME/settings.py` 파일에 `INSTALLED_APPS` 안에, `APP_NAME` 을 추가해 준다. (이래야 장고에서 인식이 가능하다고 한다.)
 - 아래에서 `LANGUAGE_CODE`와 `TIME_ZONE`을 각각 `ko-kr`와 `Asiz/Seoul`로 수정해준다. 아마 웹 내에 언어코드와 시간을 설정해주는 것 같다.
 
