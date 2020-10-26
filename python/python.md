@@ -6,6 +6,8 @@
 - 구현 기능부분도 다루지만 개발 단계에 대해 이해하기 쉽게 만들 예정.
 - django version: 3.06
 
+- 개발순서 : 프로젝트 생성 -> settings.py 수정 -> 모델 계획 및 구현 ->
+
 ## 프로젝트와 앱 생성하기
 `django-admin startproject PROJECT_NAME .`
 - 터미널에서 위와 같은 명령으로 PROJECT_NAME 이라는 이름의 장고 프로젝트를 생성한다.
