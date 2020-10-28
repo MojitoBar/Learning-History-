@@ -81,12 +81,28 @@ class TodoList_files(models.Model):
 - class안에 메소드는 뭐하는 놈인지는 알겠지만, 어떻게 쓰는지는 아직 모르겠다.
 
 ## makemigrations와 migrate
-`python manage.py makemigrations`
+`python manage.py makemigrations`<br/>
 `python manage.py migrate`
 
 - models.py를 수정하면 터미널에서 꼭 makemigrations과 migrate를 해줘야 한다.
 - 처음에 자꾸 migrate가 안돼서 이거 땜에 한 시간 삽질했다.
 - 알아보니 makemigrations와 migrate 순서대로 둘 다 해줘야 했다. (git commit과 git push같은 느낌인듯.)
+
+## 모델 확인하기
+```python
+from django.contrib import admin
+
+from .models import TodoList, TodoList_files, TodoList_images
+
+admin.site.register(TodoList)
+admin.site.register(TodoList_images)
+admin.site.register(TodoList_files)
+```
+
+- 설계한 모델이 잘 되는지 확인하는 과정이다.
+- 추가한 클래스를 불러와 `admin.site.register(CLASS_NAME)`을 통해 admin이 사용할 수 있게끔 하는것 같다.
+- 모델을 확인하면서 알아낸 점인데, models.py의 `__str__(self)` 메소드는 admin주소(웹 사이트 주소 뒤에 /admin)로 들어갔을 때 표시되는 TodoList의 Title인 것 같다.
+- 추가적으로 `python manage.py createsuperuser`를 통해 관리자 계정을 생성해주면 끝이다.
 
 ---
 [참고자료(장고쟁이)](https://djangojeng-e.github.io/2020/05/19/TodoList-4%ED%8E%B8-%EB%AA%A8%EB%8D%B8-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/)
