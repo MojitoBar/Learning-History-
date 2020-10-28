@@ -87,6 +87,7 @@ class TodoList_files(models.Model):
 - models.py를 수정하면 터미널에서 꼭 makemigrations과 migrate를 해줘야 한다.
 - 처음에 자꾸 migrate가 안돼서 이거 땜에 한 시간 삽질했다.
 - 알아보니 makemigrations와 migrate 순서대로 둘 다 해줘야 했다. (git commit과 git push같은 느낌인듯.)
+- 이러니 migrations폴더에 계속해서 뭐가 쌓이던데 괜찮은건지 모르겠다...
 
 ## 모델 확인하기
 ```python
