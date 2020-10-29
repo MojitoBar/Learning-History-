@@ -132,5 +132,32 @@ admin.site.register(TodoList, TodoListAdmin)
 - list_filter는 admin 페이지의 왼쪽 중앙에 필터가 생긴다.
 - 데이터가 있는 상태에서 admin을 수정해서 그런지, model을 어쩌다 건들였는지 `no such table`에러가 떠서 두 시간 넘게 삽질했다... db.sqlite3 파일을 지우고 다시 migrations, migrate를 하니 되는 것 같다. 이래도 안되면 flush를 이용해보자.
 
+## view.py 작성하기
+```python
+from django.shortcuts import render
+from .models import TodoList
+
+def home(request):
+    todolists = TodoList.objects
+    return render(request, "home.html", {'todolists': todolists})
+```
+
+- 데이터베이스를 화면에 뿌려주기 위해 view.py를 작성한다.
+- `from .models import TodoList`를 통해 모델에서 값을 가져올 테이블을 import 한다.
+- home 메소드를 만들어 todolists에 TodoList.objects, 즉 모든 테이블 정보를 오브젝트 형태로 넣는다.
+- 이를 home.html파일에 todolists라는 이름으로 넘겨 render한다.
+
+## tamplate (home.html) 작성하기
+```html
+{% for todolist in todolists.all %}
+	<h1>할일 제목: {{ todolist.name }}</h1>
+	<p>생성 날짜: {{ todolist.date_created }}</p>
+	<p>데드라인 날짜: {{ todolist.date_deadline }}</p>
+	<p>남은 일수: {{ todolist.remaining_days }}</p>
+{% endfor %}
+```
+
+- todolists로 받은 정보를 html로 작성해 화면에 뿌려준다.
+- 추가적으로 urls.py의 urlpatterns에 `path('', views.home, name='home'),`를 추가해준다. (기본 ''경로에 만들어둔 home 메소드를 연결한다는 뜻.)
 ---
 [참고자료(장고쟁이)](https://djangojeng-e.github.io/2020/05/19/TodoList-4%ED%8E%B8-%EB%AA%A8%EB%8D%B8-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/)
