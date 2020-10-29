@@ -105,5 +105,32 @@ admin.site.register(TodoList_files)
 - 모델을 확인하면서 알아낸 점인데, models.py의 `__str__(self)` 메소드는 admin주소(웹 사이트 주소 뒤에 /admin)로 들어갔을 때 표시되는 TodoList의 Title인 것 같다.
 - 추가적으로 `python manage.py createsuperuser`를 통해 관리자 계정을 생성해주면 끝이다.
 
+## admin.py 수정하기
+```python
+from django.contrib import admin 
+from .models import TodoList, TodoList_files, TodoList_images 
+
+class TodoList_fileInline(admin.StackedInline):
+    model = TodoList_files 
+    
+class TodoList_imageInline(admin.StackedInline):
+    model = TodoList_images
+
+class TodoListAdmin(admin.ModelAdmin):
+    inlines = [TodoList_fileInline, TodoList_imageInline]
+    list_display = ('name', 'description', 'date_created', 'date_deadline', 'remaining_days')
+    list_filter = ['date_created']
+    
+admin.site.register(TodoList, TodoListAdmin)
+```
+
+- admin 페이지에서 좀 더 알아보기 쉽게 만들기위해 admin.py를 수정한다.
+- file, image를 inline으로 바꿔서 TodoList 추가하는 화면에 나오게끔 하는 내용이다.
+- 위 두 class는 대충 StackedInline로 바꿔서 model로 리턴하는 것 같다.
+- 그렇게 받은 model을 `class TodoListAdmin(admin.ModelAdmin)`의 inlines에 배열로 넣어 페이지에서 확인할 수 있다.
+- list_dispay는 table에 맞는 이름대로 todo list 선택 페이지의 table title을 바꿔준다. (대충 보기 편해진다는 뜻.)
+- list_filter는 admin 페이지의 왼쪽 중앙에 필터가 생긴다.
+- 데이터가 있는 상태에서 admin을 수정해서 그런지, model을 어쩌다 건들였는지 `no such table`에러가 떠서 두 시간 넘게 삽질했다... db.sqlite3 파일을 지우고 다시 migrations, migrate를 하니 되는 것 같다. 이래도 안되면 flush를 이용해보자.
+
 ---
 [참고자료(장고쟁이)](https://djangojeng-e.github.io/2020/05/19/TodoList-4%ED%8E%B8-%EB%AA%A8%EB%8D%B8-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/)
