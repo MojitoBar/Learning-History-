@@ -6,7 +6,7 @@
 - 구현 기능부분도 다루지만 개발 단계에 대해 이해하기 쉽게 만들 예정.
 - django version: 3.06
 
-- 개발순서 : 프로젝트 생성 -> settings.py 수정 -> 모델 계획 및 구현 ->
+- 개발순서 : 프로젝트 생성 -> settings.py 수정 -> 모델 계획 및 구현 -> view.py 작성 후 첫 화면 렌더 ->
 
 ## 프로젝트와 앱 생성하기
 `django-admin startproject PROJECT_NAME .`
@@ -158,6 +158,6 @@ def home(request):
 ```
 
 - todolists로 받은 정보를 html로 작성해 화면에 뿌려준다.
-- 추가적으로 urls.py의 urlpatterns에 `path('', views.home, name='home'),`를 추가해준다. (기본 ''경로에 만들어둔 home 메소드를 연결한다는 뜻.)
+- 추가적으로 urls.py의 urlpatterns에 `path('', views.home, name='home'),`를 추가해준다. (기본 ' '경로에 만들어둔 home 메소드를 연결한다는 뜻.)
 ---
 [참고자료(장고쟁이)](https://djangojeng-e.github.io/2020/05/19/TodoList-4%ED%8E%B8-%EB%AA%A8%EB%8D%B8-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/)
