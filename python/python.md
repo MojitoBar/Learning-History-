@@ -130,7 +130,7 @@ admin.site.register(TodoList, TodoListAdmin)
 - 그렇게 받은 model을 `class TodoListAdmin(admin.ModelAdmin)`의 inlines에 배열로 넣어 페이지에서 확인할 수 있다.
 - list_dispay는 table에 맞는 이름대로 todo list 선택 페이지의 table title을 바꿔준다. (대충 보기 편해진다는 뜻.)
 - list_filter는 admin 페이지의 왼쪽 중앙에 필터가 생긴다.
-- 데이터가 있는 상태에서 admin을 수정해서 그런지, model을 어쩌다 건들였는지 `no such table`에러가 떠서 두 시간 넘게 삽질했다... db.sqlite3 파일을 지우고 다시 migrations, migrate를 하니 되는 것 같다. 이래도 안되면 flush를 이용해보자.
+- 데이터가 있는 상태에서 admin을 수정해서 그런지, model을 어쩌다 건들였는지 `no such table`에러가 떠서 두 시간 넘게 삽질했다... db.sqlite3 파일을 지우고 다시 migrations, migrate를 하니 되는 것 같다.
 
 ## view.py 작성하기
 ```python
@@ -159,5 +159,19 @@ def home(request):
 
 - todolists로 받은 정보를 html로 작성해 화면에 뿌려준다.
 - 추가적으로 urls.py의 urlpatterns에 `path('', views.home, name='home'),`를 추가해준다. (기본 ' '경로에 만들어둔 home 메소드를 연결한다는 뜻.)
+
+## 정적 파일 불러오기
+```python
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+) 
+```
+
+- 정적인 파일(css, image 등)을 사용하기 위해 settings.py에 위 코드를 수정해준다.
+- 앞으로 정적인 파일의 경로는 static폴더를 기준으로 한다는 뜻.
+- 정적인 파일을 사용할 html에 `{% load static %}`을 추가해줘야한다.
+
 ---
 [참고자료(장고쟁이)](https://djangojeng-e.github.io/2020/05/19/TodoList-4%ED%8E%B8-%EB%AA%A8%EB%8D%B8-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/)
