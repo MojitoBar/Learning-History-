@@ -171,7 +171,7 @@ STATICFILES_DIRS = (
 
 - 정적인 파일(css, image 등)을 사용하기 위해 settings.py에 위 코드를 수정해준다.
 - 앞으로 정적인 파일의 경로는 static폴더를 기준으로 한다는 뜻.
-- 정적인 파일을 사용할 html에 `{% load static %}`을 추가해줘야한다.
+- 정적인 파일을 사용할 html에 맨 위에 `{% load static %}`을 추가해줘야한다.
 
 ---
 [참고자료(장고쟁이)](https://djangojeng-e.github.io/2020/05/19/TodoList-4%ED%8E%B8-%EB%AA%A8%EB%8D%B8-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/)
