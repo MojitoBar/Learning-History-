@@ -25,4 +25,4 @@
 - [Todo-List](https://github.com/MojitoBar/Learning_History/blob/master/python/python.md)
 
 ## 백준 알고리즘
-- [알고리즘 풀이 모음](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/baekjoon.md)
+- [알고리즘 풀이 모음](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/README.md)
