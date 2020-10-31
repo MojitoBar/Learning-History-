@@ -1,3 +1,4 @@
+# 백준 알고리즘 풀이
 - [2884번 알람시계](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/2884.md)
 - [14681번 사분면 고르기](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/14681.md)
 - [10818번 최소, 최대](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/10818.md)
