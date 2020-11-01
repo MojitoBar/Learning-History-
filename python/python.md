@@ -173,5 +173,33 @@ STATICFILES_DIRS = (
 - 앞으로 정적인 파일의 경로는 static폴더를 기준으로 한다는 뜻.
 - 정적인 파일을 사용할 html에 맨 위에 `{% load static %}`을 추가해줘야한다.
 
+
+## Todo-List의 이미지 불러오기
+- 이미지를 불러오기 위해선 settings.py, urls.py의 수정이 필요하다.
+```python
+# MEDIA_ROOT 설정
+# 사용자가 업로드하는 미디어 정적 파일들의 기본 경로
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+```
+
+- settings.py에서는 사용자가 업로드하는 미디어의 기본 경로를 설정해준다.
+- models.py에서 이미지 업로드되는 경로가 그 하위 경로가 된다.
+
+```python
+from django.conf import settings
+from django.conf.urls.static import static
+
+urlpatterns = [
+    path('', views.home, name='home'),
+    path('admin/', admin.site.urls),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+```
+
+- url.py에서는 위에 import 2줄을 추가하고 urlpatterns의 마지막 줄을 추가한다.
+- 세팅해논 경로를 화면에 뿌리기 위해 html에서 참조하는 경로와 연결하는 것 같다.
+- settings.py는 서버가 사진을 참조할 경로를 세팅하는 것 같고, url.py는 서버에서 받은 경로를 view로 넘겨주는 역할을 하는 것 같다. (아니면 추후 수정)
+- 그리고 웬만하면 db.sqlite3과 migrations파일 날리고 새로 migrations 하는게 마음 편한것 같다.
+
 ---
 [참고자료(장고쟁이)](https://djangojeng-e.github.io/2020/05/19/TodoList-4%ED%8E%B8-%EB%AA%A8%EB%8D%B8-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/)
