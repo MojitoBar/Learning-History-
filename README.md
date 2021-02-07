@@ -1,6 +1,10 @@
 # Learning_History
 잘못된 정보가 있으면 Issues에 남겨주세요.
 
+## 코딩테스트 대비 알고리즘 풀이
+- [유클리드 호제](https://github.com/MojitoBar/Learning_History/blob/master/CodingTest/Euclidean_algorithm.md)
+- [에라토스테네스의 체](https://github.com/MojitoBar/Learning_History/blob/master/CodingTest/Sieve_of_Eratosthenes.md)
+
 ## 카카오 코딩테스트
 - [비밀지도](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/secret_map.md)
 - [다트게임](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/dart_game.md)
@@ -26,7 +30,3 @@
 
 ## 백준 알고리즘
 - [알고리즘 풀이 모음](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/README.md)
-
-## 코딩테스트 대비 알고리즘 풀이
-- [유클리드 호제](https://github.com/MojitoBar/Learning_History/blob/master/CodingTest/Euclidean_algorithm.md)
-- [에라토스테네스의 체](https://github.com/MojitoBar/Learning_History/blob/master/CodingTest/Sieve_of_Eratosthenes.md)
