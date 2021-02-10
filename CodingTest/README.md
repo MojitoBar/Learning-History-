@@ -4,3 +4,4 @@
 - [너비 우선 탐색](https://github.com/MojitoBar/Learning_History/blob/master/CodingTest/Breadth_first_search.md)
 - [깊이 우선 탐색](https://github.com/MojitoBar/Learning_History/blob/master/CodingTest/Depth_first_search.md)
 - [그리디 알고리즘](https://github.com/MojitoBar/Learning_History/blob/master/CodingTest/Greedy_algorithm.md)
+- [동적 프로그래밍](https://github.com/MojitoBar/Learning_History/blob/master/CodingTest/Dynamic_programming.md)
