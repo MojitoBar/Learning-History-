@@ -1,6 +1,6 @@
 # 백트래킹 (Back Tracking)
 - 백트래킹은 유망있는 (해에 가까운) 자식만을 탐색하는 알고리즘이다.
-- 유명한 예로 N-Queen 문제가 있다.
+- 유명한 예로 N-Queens 문제가 있다.
 <img src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F993E383B5C95A65521" width="250"/>
 
 - N * N 체스판에 N 개의 퀸을 서로 잡히지 않게 끔 배치하는 경우의 수를 구하는 문제이다.
@@ -62,3 +62,4 @@ public class Main {
 - [백준 15649번](https://www.acmicpc.net/problem/15649)
 ---
 [뚜벅이 강군의 백트래킹](https://idea-sketch.tistory.com/29)
+[주니온TV의 백트래킹 & N-Queens](https://www.youtube.com/watch?v=HRwFgtiqHH0)
