@@ -61,5 +61,5 @@ public class Main {
 - [백준 9663번](https://www.acmicpc.net/problem/9663)
 - [백준 15649번](https://www.acmicpc.net/problem/15649)
 ---
-[뚜벅이 강군의 백트래킹](https://idea-sketch.tistory.com/29)
+[뚜벅이 강군의 백트래킹](https://idea-sketch.tistory.com/29)<br/>
 [주니온TV의 백트래킹 & N-Queens](https://www.youtube.com/watch?v=HRwFgtiqHH0)
