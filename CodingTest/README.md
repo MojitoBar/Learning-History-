@@ -6,3 +6,4 @@
 - [그리디 알고리즘](https://github.com/MojitoBar/Learning_History/blob/master/CodingTest/Greedy_algorithm.md)
 - [동적 프로그래밍](https://github.com/MojitoBar/Learning_History/blob/master/CodingTest/Dynamic_programming.md)
 - [백트래킹](https://github.com/MojitoBar/Learning_History/blob/master/CodingTest/Back_tracking.md)
+- [유니온 파인드](https://github.com/MojitoBar/Learning_History/blob/master/CodingTest/Union_find.md)
