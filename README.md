@@ -14,7 +14,7 @@
 - [BufferedReader / BufferedWriter 클래스](https://github.com/MojitoBar/Learning_History/blob/master/java/BufR_BufW.md)
 
 ## iOS 사전
-- [iOS 개발자 면접 대비 질문]
+- [iOS 개발자 면접 대비 질문](https://github.com/MojitoBar/Learning_History/blob/master/iOS/iOS.md)
 
 ## ANDROID 사전
 ### Flutter를 위한 Dart 기본 지식
