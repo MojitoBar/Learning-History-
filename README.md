@@ -1,6 +1,8 @@
 # Learning_History
 잘못된 정보가 있으면 Issues에 남겨주세요.
 
+## [알고리즘 정리](https://github.com/MojitoBar/Learning_History/tree/master/CodingTest)
+
 ## 카카오 코딩테스트
 - [비밀지도](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/secret_map.md)
 - [다트게임](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/dart_game.md)
