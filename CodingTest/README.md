@@ -8,3 +8,6 @@
 - [백트래킹](https://github.com/MojitoBar/Learning_History/blob/master/CodingTest/Back_tracking.md)
 - [유니온 파인드](https://github.com/MojitoBar/Learning_History/blob/master/CodingTest/Union_find.md)
 - [다익스트라](https://github.com/MojitoBar/Learning_History/blob/master/CodingTest/Dijkstra_algorithm.md)
+
+## 알고리즘 분류별 풀이
+- [Algorithm Notion](https://profuse-door-fd0.notion.site/9bb4b449ff204aa58adafb568532e1e0)
