@@ -3,7 +3,11 @@
 
 ## [알고리즘 정리](https://github.com/MojitoBar/Learning_History/tree/master/CodingTest)
 
+## 백준 알고리즘
+- [알고리즘 풀이 모음](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/README.md)
+
 ## 카카오 코딩테스트
+- [알고리즘 풀이 모음](https://github.com/MojitoBar/Learning_History/tree/master/kakao_test/README.md)
 
 ## JAVA 사전
 - [Scanner 클래스](https://github.com/MojitoBar/Learning_History/blob/master/java/Scanner.md)
@@ -20,6 +24,3 @@
 ## WEB 사전
 ### 구글 IDE로 개발하는 Django 예제
 - [Todo-List](https://github.com/MojitoBar/Learning_History/blob/master/python/python.md)
-
-## 백준 알고리즘
-- [알고리즘 풀이 모음](https://github.com/MojitoBar/Learning_History/blob/master/baekjoon/README.md)
