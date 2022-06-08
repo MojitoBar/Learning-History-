@@ -7,4 +7,5 @@
 - [160. Intersection of Two Linked Lists]()
 - [304. Range Sum Query 2D - Immutable]()
 - [867. Transpose Matrix]()
+- [1332. Remove Palindromic Subsequences]()
 - [1480. Running Sum of 1d Array]()
