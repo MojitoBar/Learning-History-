@@ -1,5 +1,6 @@
 # LeetCode 풀이 모음
 
+- [3. Longest Substring Without Repeating Characters](https://github.com/MojitoBar/Learning_History/blob/master/leetcode/leet3.md)
 - [13. Roman to Integer](https://github.com/MojitoBar/Learning_History/blob/master/leetcode/leet13.md)
 - [51. N-Queens](https://github.com/MojitoBar/Learning_History/blob/master/leetcode/leet51.md)
 - [52. N-Queens II](https://github.com/MojitoBar/Learning_History/blob/master/leetcode/leet52.md)
