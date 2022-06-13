@@ -5,6 +5,7 @@
 - [51. N-Queens](https://github.com/MojitoBar/Learning_History/blob/master/leetcode/leet51.md)
 - [52. N-Queens II](https://github.com/MojitoBar/Learning_History/blob/master/leetcode/leet52.md)
 - [88. Merge Sorted Array](https://github.com/MojitoBar/Learning_History/blob/master/leetcode/leet88.md)
+- [120. Triangle](https://github.com/MojitoBar/Learning_History/blob/master/leetcode/leet120.md)
 - [160. Intersection of Two Linked Lists](https://github.com/MojitoBar/Learning_History/blob/master/leetcode/leet160.md)
 - [167. Two Sum II - Input Array Is Sorted](https://github.com/MojitoBar/Learning_History/blob/master/leetcode/leet167.md)
 - [304. Range Sum Query 2D - Immutable](https://github.com/MojitoBar/Learning_History/blob/master/leetcode/leet304.md)
