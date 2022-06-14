@@ -9,6 +9,7 @@
 - [160. Intersection of Two Linked Lists](https://github.com/MojitoBar/Learning_History/blob/master/leetcode/leet160.md)
 - [167. Two Sum II - Input Array Is Sorted](https://github.com/MojitoBar/Learning_History/blob/master/leetcode/leet167.md)
 - [304. Range Sum Query 2D - Immutable](https://github.com/MojitoBar/Learning_History/blob/master/leetcode/leet304.md)
+- [583. Delete Operation for Two Strings](https://github.com/MojitoBar/Learning_History/blob/master/leetcode/leet583.md)
 - [867. Transpose Matrix](https://github.com/MojitoBar/Learning_History/blob/master/leetcode/leet867.md)
 - [1658. Minimum Operations to Reduce X to Zero](https://github.com/MojitoBar/Learning_History/blob/master/leetcode/leet1658.md)
 - [1332. Remove Palindromic Subsequences](https://github.com/MojitoBar/Learning_History/blob/master/leetcode/leet1332.md)
