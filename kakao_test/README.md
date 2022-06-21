@@ -15,7 +15,7 @@
 - [뉴스 클러스터링](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/news_clustering.md)
 - [주차 요금 계산](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/parking_fee_calculation.md)
 - [후보키](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/candidate_key.md)
-- [문자열 압출]
+- [문자열 압축](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/string_compression.md)
 - [오픈 채팅방]
 - [괄호 변환]
 - [순위 검색]
