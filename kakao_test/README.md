@@ -4,7 +4,7 @@
 - [비밀지도](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/secret_map.md)
 - [다트게임](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/dart_game.md)
 - [신고 결과 받기](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/get_report_results.md)
-- [신규 아이디 추천]
+- [신규 아이디 추천](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/newid_recommend.md)
 - [숫자 문자열과 영단어]
 - [키패드 누르기]
 - [크레인 인형뽑기 게임]
