@@ -16,6 +16,7 @@
 - [주차 요금 계산](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/parking_fee_calculation.md)
 - [후보키](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/candidate_key.md)
 - [문자열 압축](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/string_compression.md)
+- [메뉴 리뉴얼](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/menu_renewal.md)
 - [오픈 채팅방]
 - [괄호 변환]
 - [순위 검색]
