@@ -19,7 +19,7 @@
 - [메뉴 리뉴얼](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/menu_renewal.md)
 - [수식 최대화](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/maximize_formulas.md)
 - [튜플](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/tuple.md)
-- [오픈 채팅방]
+- [오픈 채팅방](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/open_chatting.md)
 - [괄호 변환]
 - [순위 검색]
 - [k진수에서 소수 개수 구하기]
