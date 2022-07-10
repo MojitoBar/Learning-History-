@@ -7,7 +7,7 @@
 - [신규 아이디 추천](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/newid_recommend.md)
 - [숫자 문자열과 영단어](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/number_string_word.md)
 - [키패드 누르기](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/press_keypad.md)
-- [크레인 인형뽑기 게임]
+- [크레인 인형뽑기 게임](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/crane.md)
 - [실패율]
 
 **Level 2**
