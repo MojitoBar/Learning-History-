@@ -20,7 +20,7 @@
 - [수식 최대화](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/maximize_formulas.md)
 - [튜플](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/tuple.md)
 - [오픈 채팅방](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/open_chatting.md)
-- [괄호 변환]
+- [괄호 변환](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/parentheses_conversion.md)
 - [순위 검색]
 - [k진수에서 소수 개수 구하기]
 - [양궁대회]
