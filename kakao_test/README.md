@@ -23,7 +23,7 @@
 - [괄호 변환](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/parentheses_conversion.md)
 - [순위 검색](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/rank_search.md)
 - [압축](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/compression.md)
-- [k진수에서 소수 개수 구하기]
+- [k진수에서 소수 개수 구하기](https://github.com/MojitoBar/Learning_History/blob/master/kakao_test/find_prime.md)
 - [양궁대회]
 
 **Level 3**
